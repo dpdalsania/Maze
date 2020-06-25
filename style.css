@@ -1,0 +1,59 @@
+body { 
+     background: lightblue;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    border-spacing: 0px;
+    border-color: black;
+    margin: 80px;
+    padding:40px;
+    margin-left: 24%;
+    margin-top:10px;
+    
+   
+}
+
+.wall {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://physicsworld.com/wp-content/uploads/2018/02/2018-01-12-trees.jpg)
+}
+h1{
+    font-size: 60px;
+    background-color: grey;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+.resultContainer {
+    display: none;
+    width: 500px;
+    height: 120px;
+    /* background: lightblue; */
+    text-align: center;
+    font: 4vh sans-serif;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 48%;
+    margin: -100px 0 0 -200px;
+}
+
+.centerResult{
+    text-align: center;
+    padding-top: 38px;
+}
+
+.button {
+    width: 100px;
+    margin: 35px;
+    background-color: yellow;
+    text-align: center;
+    font: 4vh sans-serif;
+    border: 1px solid black;
+}

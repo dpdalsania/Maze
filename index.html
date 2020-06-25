@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Maze</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Maze Game</h1>
+        <div id = "mainTable">
+            <table>
+                <tr>
+                    <!-- 0 -->
+                    <td id="0000" class="wall"></td>
+                    <td id="0001" class="wall"></td>
+                    <td id="0002" class="wall"></td>
+                    <td id="0003" class="wall"></td>
+                    <td id="0004" class="wall"></td>
+                    <td id="0005" class="wall"></td>
+                    <td id="0006" class="wall"></td>
+                    <td id="0007" class="wall"></td>
+                    <td id="0008" class="wall"></td>
+                    <td id="0009" class="wall"></td>
+                    <td id="0010" class="wall"></td>
+                    <td id="0011" class="wall"></td>
+                    <td id="0012" class="wall"></td>
+                    <td id="0013" class="wall"></td>
+                    <td id="0014" class="wall"></td>
+                    <td id="0015" class="wall"></td>
+                    <td id="0016" class="wall"></td>
+                    <td id="0017" class="wall"></td>
+                    <td id="0018" class="wall"></td>
+                    <td id="0019" class="wall"></td>
+                    <td id="0020" class="wall"></td>                    
+                </tr>
+                <tr>
+                    <!-- 1 -->
+                    <td id="0100" class="wall"></td>
+                    <td id="0101"></td>
+                    <td id="0102"></td>
+                    <td id="0103"></td>
+                    <td id="0104" class="wall"></td>
+                    <td id="0105"></td>
+                    <td id="0106"></td>
+                    <td id="0107"></td>
+                    <td id="0108"></td>
+                    <td id="0109"></td>
+                    <td id="0110" class="wall"></td>
+                    <td id="0111"></td>
+                    <td id="0112"></td>
+                    <td id="0113"></td>
+                    <td id="0114"></td>
+                    <td id="0115"></td>
+                    <td id="0116" class="wall"></td>
+                    <td id="0117"></td>
+                    <td id="0118" class="wall"></td>
+                    <td id="0119"></td>
+                    <td id="0120" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 2 -->
+                    <td id="0200" class="wall"></td>
+                    <td id="0201"></td>
+                    <td id="0202" class="wall"></td>
+                    <td id="0203"></td>
+                    <td id="0204" class="wall"></td>
+                    <td id="0205"></td>
+                    <td id="0206" class="wall"></td>
+                    <td id="0207" class="wall"></td>
+                    <td id="0208" class="wall"></td>
+                    <td id="0209"></td>
+                    <td id="0210" class="wall"></td>
+                    <td id="0211" class="wall"></td>
+                    <td id="0212" class="wall"></td>
+                    <td id="0213" class="wall"></td>
+                    <td id="0214" class="wall"></td>
+                    <td id="0215"></td>
+                    <td id="0216" class="wall"></td>
+                    <td id="0217"></td>
+                    <td id="0218" class="wall"></td>
+                    <td id="0219"></td>
+                    <td id="0220" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 3 -->
+                    <td id="0300" class="wall"></td>
+                    <td id="0301"></td>
+                    <td id="0302" class="wall"></td>
+                    <td id="0303"></td>
+                    <td id="0304" class="wall"></td>
+                    <td id="0305"></td>
+                    <td id="0306"></td>
+                    <td id="0307"></td>
+                    <td id="0308" class="wall"></td>
+                    <td id="0309"></td>
+                    <td id="0310"></td>
+                    <td id="0311"></td>
+                    <td id="0312"></td>
+                    <td id="0313"></td>
+                    <td id="0314" class="wall"></td>
+                    <td id="0315"></td>
+                    <td id="0316" class="wall"></td>
+                    <td id="0317"></td>
+                    <td id="0318"></td>
+                    <td id="0319"></td>
+                    <td id="0320" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 4 -->
+                    <td id="0400" class="wall"></td>
+                    <td id="0401"></td>
+                    <td id="0402" class="wall"></td>
+                    <td id="0403" class="wall"></td>
+                    <td id="0404" class="wall"></td>
+                    <td id="0405" class="wall"></td>
+                    <td id="0406" class="wall"></td>
+                    <td id="0407" class="wall"></td>
+                    <td id="0408" class="wall"></td>
+                    <td id="0409"></td>
+                    <td id="0410" class="wall"></td>
+                    <td id="0411"></td>
+                    <td id="0412" class="wall"></td>
+                    <td id="0413" class="wall"></td>
+                    <td id="0414" class="wall"></td>
+                    <td id="0415"></td>
+                    <td id="0416" class="wall"></td>
+                    <td id="0417"></td>
+                    <td id="0418" class="wall"></td>
+                    <td id="0419"></td>
+                    <td id="0420" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 5 -->
+                    <td id="0500" class="wall"></td>
+                    <td id="0501"></td>
+                    <td id="0502"></td>
+                    <td id="0503"></td>
+                    <td id="0504"></td>
+                    <td id="0505"></td>
+                    <td id="0506"></td>
+                    <td id="0507"></td>
+                    <td id="0508"></td>
+                    <td id="0509"></td>
+                    <td id="0510" class="wall"></td>
+                    <td id="0511"></td>
+                    <td id="0512"></td>
+                    <td id="0513"></td>
+                    <td id="0514"></td>
+                    <td id="0515"></td>
+                    <td id="0516" class="wall"></td>
+                    <td id="0517"></td>
+                    <td id="0518" class="wall"></td>
+                    <td id="0519"></td>
+                    <td id="0520" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 6 -->
+                    <td id="0600" class="wall"></td>
+                    <td id="0601"></td>
+                    <td id="0602" class="wall"></td>
+                    <td id="0603" class="wall"></td>
+                    <td id="0604" class="wall"></td>
+                    <td id="0605"></td>
+                    <td id="0606" class="wall"></td>
+                    <td id="0607" class="wall"></td>
+                    <td id="0608" class="wall"></td>
+                    <td id="0609" class="wall"></td>
+                    <td id="0610" class="wall"></td>
+                    <td id="0611"></td>
+                    <td id="0612" class="wall"></td>
+                    <td id="0613" class="wall"></td>
+                    <td id="0614" class="wall"></td>
+                    <td id="0615" class="wall"></td>
+                    <td id="0616" class="wall"></td>
+                    <td id="0617"></td>
+                    <td id="0618" class="wall"></td>
+                    <td id="0619"></td>
+                    <td id="0620" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 7 -->
+                    <td id="0700" class="wall"></td>
+                    <td id="0701"></td>
+                    <td id="0702" class="wall"></td>
+                    <td id="0703"></td>
+                    <td id="0704"></td>
+                    <td id="0705"></td>
+                    <td id="0706" class="wall"></td>
+                    <td id="0707"></td>
+                    <td id="0708"></td>
+                    <td id="0709"></td>
+                    <td id="0710" class="wall"></td>
+                    <td id="0711"></td>
+                    <td id="0712" class="wall"></td>
+                    <td id="0713"></td>
+                    <td id="0714"></td>
+                    <td id="0715"></td>
+                    <td id="0716"></td>
+                    <td id="0717"></td>
+                    <td id="0718" class="wall"></td>
+                    <td id="0719"></td>
+                    <td id="0720" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 8 -->
+                    <td id="0800" class="wall"></td>
+                    <td id="0801"></td>
+                    <td id="0802" class="wall"></td>
+                    <td id="0803" class="wall"></td>
+                    <td id="0804" class="wall"></td>
+                    <td id="0805" class="wall"></td>
+                    <td id="0806" class="wall"></td>
+                    <td id="0807"></td>
+                    <td id="0808" class="wall"></td>
+                    <td id="0809"></td>
+                    <td id="0810" class="wall"></td>
+                    <td id="0811"></td>
+                    <td id="0812" class="wall"></td>
+                    <td id="0813"></td>
+                    <td id="0814" class="wall"></td>
+                    <td id="0815" class="wall"></td>
+                    <td id="0816" class="wall"></td>
+                    <td id="0817"></td>
+                    <td id="0818" class="wall"></td>
+                    <td id="0819"></td>
+                    <td id="0820" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 9 -->
+                    <td id="0900"></td>
+                    <td id="0901"></td>
+                    <td id="0902"></td>
+                    <td id="0903"></td>
+                    <td id="0904"></td>
+                    <td id="0905"></td>
+                    <td id="0906" class="wall"></td>
+                    <td id="0907"></td>
+                    <td id="0908" class="wall"></td>
+                    <td id="0909"></td>
+                    <td id="0910" class="wall"></td>
+                    <td id="0911"></td>
+                    <td id="0912" class="wall"></td>
+                    <td id="0913"></td>
+                    <td id="0914" class="wall"></td>
+                    <td id="0915"></td>
+                    <td id="0916" class="wall"></td>
+                    <td id="0917"></td>
+                    <td id="0918" class="wall"></td>
+                    <td id="0919"></td>
+                    <td id="0920"></td>
+                </tr>
+                <tr>
+                    <!-- 10 -->
+                    <td id="1000" class="wall"></td>
+                    <td id="1001" class="wall"></td>
+                    <td id="1002" class="wall"></td>
+                    <td id="1003" class="wall"></td>
+                    <td id="1004" class="wall"></td>
+                    <td id="1005"></td>
+                    <td id="1006" class="wall"></td>
+                    <td id="1007"></td>
+                    <td id="1008" class="wall"></td>
+                    <td id="1009"></td>
+                    <td id="1010" class="wall"></td>
+                    <td id="1011"></td>
+                    <td id="1012" class="wall"></td>
+                    <td id="1013"></td>
+                    <td id="1014" class="wall"></td>
+                    <td id="1015"></td>
+                    <td id="1016" class="wall"></td>
+                    <td id="1017"></td>
+                    <td id="1018" class="wall"></td>
+                    <td id="1019" class="wall"></td>
+                    <td id="1020" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 11 -->
+                    <td id="1100" class="wall"></td>
+                    <td id="1101"></td>
+                    <td id="1102"></td>
+                    <td id="1103"></td>
+                    <td id="1104"></td>
+                    <td id="1105"></td>
+                    <td id="1106" class="wall"></td>
+                    <td id="1107"></td>
+                    <td id="1108" class="wall"></td>
+                    <td id="1109"></td>
+                    <td id="1110" class="wall"></td>
+                    <td id="1111"></td>
+                    <td id="1112"></td>
+                    <td id="1113"></td>
+                    <td id="1114" class="wall"></td>
+                    <td id="1115"></td>
+                    <td id="1116" class="wall"></td>
+                    <td id="1117"></td>
+                    <td id="1118" class="wall"></td>
+                    <td id="1119"></td>
+                    <td id="1120" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 12 -->
+                    <td id="1200" class="wall"></td>
+                    <td id="1201"></td>
+                    <td id="1202" class="wall"></td>
+                    <td id="1203" class="wall"></td>
+                    <td id="1204" class="wall"></td>
+                    <td id="1205" class="wall"></td>
+                    <td id="1206" class="wall"></td>
+                    <td id="1207" class="wall"></td>
+                    <td id="1208" class="wall"></td>
+                    <td id="1209"></td>
+                    <td id="1210" class="wall"></td>
+                    <td id="1211" class="wall"></td>
+                    <td id="1212" class="wall"></td>
+                    <td id="1213" class="wall"></td>
+                    <td id="1214" class="wall"></td>
+                    <td id="1215"></td>
+                    <td id="1216" class="wall"></td>
+                    <td id="1217"></td>
+                    <td id="1218" class="wall"></td>
+                    <td id="1219"></td>
+                    <td id="1220" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 13 -->
+                    <td id="1300" class="wall"></td>
+                    <td id="1301"></td>
+                    <td id="1302"></td>
+                    <td id="1303"></td>
+                    <td id="1304"></td>
+                    <td id="1305"></td>
+                    <td id="1306"></td>
+                    <td id="1307"></td>
+                    <td id="1308" class="wall"></td>
+                    <td id="1309"></td>
+                    <td id="1310"></td>
+                    <td id="1311"></td>
+                    <td id="1312"></td>
+                    <td id="1313"></td>
+                    <td id="1314"></td>
+                    <td id="1315"></td>
+                    <td id="1316" class="wall"></td>
+                    <td id="1317"></td>
+                    <td id="1318"></td>
+                    <td id="1319"></td>
+                    <td id="1320" class="wall"></td>
+                </tr>
+                <tr>
+                    <!-- 14 -->
+                    <td id="1400" class="wall"></td>
+                    <td id="1401" class="wall"></td>
+                    <td id="1402" class="wall"></td>
+                    <td id="1403" class="wall"></td>
+                    <td id="1404" class="wall"></td>
+                    <td id="1405" class="wall"></td>
+                    <td id="1406" class="wall"></td>
+                    <td id="1407" class="wall"></td>
+                    <td id="1408" class="wall"></td>
+                    <td id="1409" class="wall"></td>
+                    <td id="1410" class="wall"></td>
+                    <td id="1411" class="wall"></td>
+                    <td id="1412" class="wall"></td>
+                    <td id="1413" class="wall"></td>
+                    <td id="1414" class="wall"></td>
+                    <td id="1415" class="wall"></td>
+                    <td id="1416" class="wall"></td>
+                    <td id="1417" class="wall"></td>
+                    <td id="1418" class="wall"></td>
+                    <td id="1419" class="wall"></td>
+                    <td id="1420" class="wall"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="resultWrapper" class="resultContainer">
+                <div id="result" class="centerResult"></div><button class="button" onclick="location.reload()">Reset</button>
+            </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
